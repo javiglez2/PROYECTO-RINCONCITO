@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rinconcito | Arroyo de la Miel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#inicio">
+                    <!-- Si tienes archivo de logo pon su ruta, de lo contrario muestra el texto con tipografía de marca -->
+                    <span class="logo-text">EL RINCONCITO</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#menu">Nuestra Carta</a></li>
+                    <li><a href="#contacto">Dónde Estamos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>El Rinconcito</h1>
+                <p>Burgers, camperos, patatas especiales y mucho más en Arroyo de la Miel</p>
+            </div>
+
+            <div class="hero-actions">
+                <a href="#menu" class="btn">Ver Carta Digital</a>
+                <a href="https://search.google.com/local/writereview?placeid=ChIJTxMR8kr9cg0REQbuxTKZ0MU" class="btn btn-outline" target="_blank" rel="noopener">⭐ Valóranos</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="menu" class="container menu-section">
+        <h2 class="section-title">Nuestra Carta</h2>
+        <p class="menu-hint">👆 Toca una carta para verla en grande</p>
+
+        <div class="menu-layout">
+            <div class="menu-sheet">
+                <button type="button" class="menu-open" aria-label="Ampliar carta: Entrantes, Bocadillos y Patatas Especiales">
+                    <img src="rinconcitomenu3.png" alt="Entrantes, Bocadillos y Patatas Especiales">
+                </button>
+            </div>
+
+            <div class="menu-sheet">
+                <button type="button" class="menu-open" aria-label="Ampliar carta: Perritos, Menú Infantil, Ensaladas y Burgers">
+                    <img src="rinconcitomenu1.png" alt="Perritos, Menú Infantil, Ensaladas y Burgers">
+                </button>
+            </div>
+
+            <!-- Tercera imagen: ocupa el ancho completo y queda centrada -->
+            <div class="menu-sheet menu-sheet-wide">
+                <button type="button" class="menu-open" aria-label="Ampliar carta: Shawarma, Camperos, Salsas y Bebidas">
+                    <img src="rinconcitomenu2.png" alt="Shawarma, Camperos, Salsas y Bebidas">
+                </button>
+            </div>
+        </div>
+
+        <div class="allergen-note">
+            <p>⚠️ *Escríbenos o consulta con nuestro personal si necesitas información detallada sobre alérgenos.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto + Footer -->
+    <section id="contacto" class="panel-info">
+        <div class="container">
+            <h2 class="section-title">Dónde Estamos</h2>
+            <div class="info-section">
+                <div class="info-box">
+                    <h3>📍 Ubicación</h3>
+                    <p>Calle San Juan, 25</p>
+                    <p>29631 Arroyo de la Miel,<br>Benalmádena (Málaga)</p>
+                </div>
+                <div class="info-box">
+                    <h3>🕒 Horario</h3>
+                    <p><strong>Lunes:</strong> 12:30 - 15:45 | 19:30 - 23:30</p>
+                    <p><strong>Martes:</strong> Cerrado</p>
+                    <p><strong>Miércoles:</strong> 19:30 - 23:30</p>
+                    <p><strong>Jueves a Domingo:</strong> 12:30 - 15:45 | 19:30 - 23:30</p>
+                </div>
+                <div class="info-box">
+                    <h3>📞 Teléfono y Pedidos</h3>
+                    <p><a href="tel:952633450" class="contact-link">952 63 34 50</a></p>
+                    <p><a href="tel:659588997" class="contact-link">659 58 89 97</a></p>
+                    <p class="sub-contact">Reparto a domicilio disponible</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 El Rinconcito. Todos los derechos reservados.</p>
+        </footer>
+    </section>
+
+    <!-- Lightbox de la carta -->
+    <div id="lightbox" class="lightbox" hidden>
+        <button type="button" class="lightbox-close" aria-label="Cerrar carta">✕</button>
+        <div class="lightbox-scroll">
+            <img id="lightbox-img" class="lightbox-img" src="" alt="">
+        </div>
+        <p class="lightbox-help" id="lightbox-help">Toca la carta para acercar</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
